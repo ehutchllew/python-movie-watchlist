@@ -50,5 +50,5 @@ def watch_movie(title):
 def get_watched_movies():
     with connection:
         cursor = connection.cursor()
-        cursor.execut(SELECT_WATCHED_MOVIES)
+        cursor.execute(SELECT_WATCHED_MOVIES)
         return cursor.fetchall()
